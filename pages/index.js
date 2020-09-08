@@ -9,7 +9,7 @@ import Divisor from '../components/DivisorHeader'
 import ProductCard from '../components/ProductCard'
 import Footer from '../components/Footer'
  
- 
+  
 import {
     ProductsCardContainer
 } from '../styles/Home'
