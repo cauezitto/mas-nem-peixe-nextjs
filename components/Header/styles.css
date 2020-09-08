@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+.container{
+    width: 100vw;
+    display: flex;
+
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    
+    height: 100px;
+}
+
+.mobile-cart{
+    font-size: 5.4rem;
+    position: absolute;
+
+    right: 5%;
+
+    align-self: center;
+
+    display: none;
+
+    color: #414141;
+}
+
+.menu{
+    font-size: 6rem;
+    position: absolute;
+
+    left: 5%;
+
+    align-self: center;
+
+    display: none;
+
+    color: #414141;
+}
+
+.logoContainer{
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+    margin-left: 5%;
+
+    height: 100%;
+}
+
+.logoContainer img{
+    
+    width: 80%;
+
+    margin: 8px;
+
+    align-self: center;
+}
+
+.linksContainer{
+    display: flex;
+    margin: auto;
+
+    width: 50%;
+
+    justify-content: center;
+    margin-right: 60px;
+
+}
+
+.linksContainer strong{
+    margin: auto;
+    font-size: 1.8rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.linksContainer strong svg{
+    margin: auto;
+    margin-right: 8px;
+    color: #03989E;
+    font-size: 2.4rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+@media(max-width: 925px){
+
+    .linksContainer{
+       display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    .mobile-cart{
+        display: block;
+    }
+
+    .header{
+        justify-content: center;
+    }
+
+    .logoContainer{
+        justify-self: center;
+        margin: auto;
+        align-self: center;
+
+        justify-content: center;
+
+        position: unset;
+    }
+}
+
+@media(max-width: 722px){
+
+    .searchInputContainer{
+        position: absolute;
+    }
+}
+
+@media(max-width: 420px){
+
+    .logoContainer img{
+        width: 60%;
+    }
+
+    .menu{
+        right: 20px;
+    }
+}
