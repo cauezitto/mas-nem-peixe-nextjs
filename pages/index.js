@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Header from '../components/Header'
 import SearchHeader from '../components/SearchHeader'
 import Banner from '../components/Banner'
@@ -8,7 +8,10 @@ import CTAbutton from '../components/CTAbutton'
 import Divisor from '../components/DivisorHeader'
 import ProductCard from '../components/ProductCard'
 import Footer from '../components/Footer'
- 
+
+import Head from 'next/head'
+
+//Binding events. 
   
 import {
     ProductsCardContainer
@@ -81,6 +84,13 @@ const Camisetas = [
 export default function Home() { 
     return (
        <>
+       <Head>
+        <title>
+          Mas Nem Peixe?
+        </title>
+
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+       </Head>
        <Header/>
        <SearchHeader/>
        <Banner height = {300}/>

@@ -10,7 +10,7 @@ export default function CTAhome({items}) {
         <Container>
             {
                 items.map(item => (
-                    <Item src = {item} >
+                    <Item key = {Math.random().toString(36).slice(2)} src = {item} >
 
                     </Item>
                 ))
