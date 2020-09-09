@@ -85,6 +85,7 @@ export default function Home() {
     return (
        <>
        <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <title>
           Mas Nem Peixe?
         </title>
