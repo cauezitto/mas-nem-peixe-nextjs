@@ -7,7 +7,7 @@ import {
 export default function Banner({height}) {
     return (
         <Container height = {height} >
-            <img src = {'/bannerHome1.png'}/>
+            <img src = {'/bannerHome1.webp'}/>
         </Container>
     )
 }

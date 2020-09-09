@@ -11,7 +11,7 @@ function Header() {
         <FiShoppingBag className = "mobile-cart" />
 
         <div className = 'logoContainer' >
-         <img src = {'/logo.png'} />
+         <img src = {'/logo.webp'} />
         </div>
 
         <div className = 'linksContainer' >

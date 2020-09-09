@@ -56,7 +56,7 @@ export default function Footer() {
                 </Title>
 
                <IconContainer>
-                    <img src = {'/cards.png'} alt = "formas de pagamento"/>
+                    <img src = {'/cards.webp'} alt = "formas de pagamento"/>
                </IconContainer>
             </Column>
 

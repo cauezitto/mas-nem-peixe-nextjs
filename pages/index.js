@@ -24,28 +24,28 @@ const Canecas = [
         title: 'Mas Nem Peixe?',
         price: '34.00',
         category: 'Caneca',
-        image: '/caneca.png'
+        image: '/caneca.webp'
     },
     {
         id: 2,
         title: 'Mas Nem Peixe?',
         price: '34.00',
         category: 'Caneca',
-        image: '/caneca.png'
+        image: '/caneca.webp'
     },
     {
         id: 3,
         title: 'Mas Nem Peixe?',
         price: '34.00',
         category: 'Caneca',
-        image: '/caneca.png'
+        image: '/caneca.webp'
     },
     {
         id: 4,
         title: 'Mas Nem Peixe?',
         price: '34.00',
         category: 'Caneca',
-        image: '/caneca.png'
+        image: '/caneca.webp'
     },
 ]
 
@@ -55,28 +55,28 @@ const Camisetas = [
         title: 'E As Proteinas?',
         price: '40.00',
         category: 'Camiseta',
-        image: '/camiseta2.png'
+        image: '/camiseta2.webp'
     },
     {
         id: 1,
         title: 'E As Proteinas?',
         price: '40.00',
         category: 'Camiseta',
-        image: '/camiseta2.png'
+        image: '/camiseta2.webp'
     },
     {
         id: 1,
         title: 'E As Proteinas?',
         price: '40.00',
         category: 'Camiseta',
-        image: '/camiseta2.png'
+        image: '/camiseta2.webp'
     },
     {
         id: 1,
         title: 'E As Proteinas?',
         price: '40.00',
         category: 'Camiseta',
-        image: '/camiseta2.png'
+        image: '/camiseta2.webp'
     },
     
 ]
@@ -91,10 +91,11 @@ export default function Home() {
 
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
        </Head>
+
        <Header/>
        <SearchHeader/>
        <Banner height = {300}/>
-       <CTA1 items = {['camisetasCTA.png', 'almofadasCTA.png', 'canecasCTA.png']} />
+       <CTA1 items = {['camisetasCTA.webp', 'almofadasCTA.webp', 'canecasCTA.webp']} />
        <CTAbutton text = 'SOBRE NÓS' />
        
        <Divisor title = 'CAMISETAS' />
