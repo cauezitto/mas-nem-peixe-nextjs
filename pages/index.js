@@ -1,8 +1,9 @@
-
+import Contact from '../components/Contact'
 import Header from '../components/Header'
 import SearchHeader from '../components/SearchHeader'
 import Banner from '../components/Banner'
-import CTA1 from '../components/CTAhome'
+import InstalmentsAndPayments from '../components/InstalmentsAndPayments'
+
 import CTAbutton from '../components/CTAbutton'
 
 import Divisor from '../components/DivisorHeader'
@@ -42,6 +43,34 @@ const Canecas = [
     },
     {
         id: 4,
+        title: 'Mas Nem Peixe?',
+        price: '34.00',
+        category: 'Caneca',
+        image: '/caneca.webp'
+    },
+    {
+        id: 5,
+        title: 'Mas Nem Peixe?',
+        price: '34.00',
+        category: 'Caneca',
+        image: '/caneca.webp'
+    },
+    {
+        id: 6,
+        title: 'Mas Nem Peixe?',
+        price: '34.00',
+        category: 'Caneca',
+        image: '/caneca.webp'
+    },
+    {
+        id: 7,
+        title: 'Mas Nem Peixe?',
+        price: '34.00',
+        category: 'Caneca',
+        image: '/caneca.webp'
+    },
+    {
+        id: 8,
         title: 'Mas Nem Peixe?',
         price: '34.00',
         category: 'Caneca',
@@ -92,23 +121,14 @@ export default function Home() {
 
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
        </Head>
-
+       <Contact/>
        <Header/>
        <SearchHeader/>
        <Banner height = {300}/>
-       <CTA1 items = {['camisetasCTA.webp', 'almofadasCTA.webp', 'canecasCTA.webp']} />
-       <CTAbutton text = 'SOBRE NÓS' />
-       
-       <Divisor title = 'CAMISETAS' />
-        <ProductsCardContainer>
-            {
-                Camisetas.map(camiseta => (
-                    <ProductCard key ={camiseta.id} product = {camiseta}  />
-                ))
-            }
-        </ProductsCardContainer>
 
-        <CTAbutton text = 'VEJA MAIS' />
+       <InstalmentsAndPayments/>
+      
+       <CTAbutton text = 'SOBRE NÓS' />
 
         <Divisor title = 'CANECAS' />
         <ProductsCardContainer>
@@ -119,7 +139,7 @@ export default function Home() {
             }
         </ProductsCardContainer>
 
-        <CTAbutton text = 'VEJA MAIS' />
+        
 
         <Footer/>
        </>

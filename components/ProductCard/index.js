@@ -2,20 +2,16 @@ import React from 'react'
 
 import {
     Container,
-    ButtonsContainer,
+    Button,
     Title,
     Price,
     Installments
 } from './styles.js'
 
-import {HiShoppingCart} from 'react-icons/hi'
-
-import {MdDescription} from 'react-icons/md'
-
 export default function ProductCard({product}) {
     return (
         <Container>
-            <img src = {product.image} alt = {product.title} />
+            <img src = {product.image} alt = {product.title} loading = "lazy" />
 
             <Title>
                 {product.category}
@@ -31,21 +27,9 @@ export default function ProductCard({product}) {
                 {`ou então 6x R$ ${(product.price/6).toFixed(2)}`}
             </Installments>
 
-            <ButtonsContainer>
-                <button>
-                   <HiShoppingCart />
-                    <strong>
-                        ENCOMENDAR
-                    </strong>
-                </button>
-
-                <button>
-                    <MdDescription />
-                    <strong>
-                        DETALHES
-                    </strong>
-                </button>
-            </ButtonsContainer>
+            <Button>
+                EU QUERO!
+            </Button>
         </Container>
     )
 }

@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+
+const invertGradient = css`
+  background: rgb(248,91,44);
+background: linear-gradient(157deg, rgba(248,91,44,1) 5%, rgba(40,152,158,1) 100%);
+`
 
 export const Container = styled.div`
   height: 50px;
@@ -33,13 +38,17 @@ export const Line = styled.div`
   width: 75%;
   height: 4px;
 
-  background: #03989E;
+  background: rgb(40,152,158);
+  background: linear-gradient(157deg, rgba(40,152,158,1) 25%, rgba(248,91,44,1) 100%);
 
   position: relative;
 
   margin: auto;
 
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  ${props => props.invert && invertGradient}
 
   @media(max-width: 800px){
     width: 35%;

@@ -12,7 +12,7 @@ export default function DivisorHeader({title}) {
                 <h1>
                     {title}
                 </h1>
-            <Line/>
+            <Line invert />
         </Container>
     )
 }

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  cursor: pointer;
   
   width: 250px;
 
@@ -10,12 +11,28 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
+  padding: 10px;
+
+  border: 3px solid #f1f1f1;
+
+  border-radius: 20px;
+
   img{
-      width: 90%;
+      width: 100%;
       height: auto;
       margin: auto;
       margin-top: 0;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
+  }
+
+  :hover{
+    transition: 300ms;
+    border: 3px solid #FF5A00;
+
+    button{
+      background: #FF5A00;
+      color: #fafafa;
+    }
   }
 
   @media(max-width: 600px){
@@ -23,24 +40,35 @@ export const Container = styled.div`
   }
 `;
 
-export const ButtonsContainer = styled.div`
-  display: flex;
-
+export const Button = styled.button`
   justify-content: center;
   align-items: center;
 
   height: 40px;
-  width: 90%;
+  width: 70%;
 
-  background: rgba(3, 152, 158, 0.76);
+  background: none;
 
-  border-radius: 3px;
+  border-radius: 10px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  border: 3px solid #03989E;
+  border: 3px solid #FF5A00;
 
   margin: auto;
+  margin-top: 15px;
+
+  font-size: 1.8rem;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: 600;
+  color: #FF5A00;
+
+  transition: 250ms;
+
+  :hover{
+    transition: 250ms;
+    
+  }
 
   @media(max-width: 520px){
     width: 100%;
@@ -88,24 +116,25 @@ export const ButtonsContainer = styled.div`
 export const Title = styled.h1`
     color: #000000;
     font-family: 'Manjari', sans-serif;
-
+    font-size: 2rem;
+    margin-bottom: 15px;
     text-align: center;
 `
 
 export const Price = styled.strong`
     font-family: 'Sunflower', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: #FF5A00;
 
     text-align: center;
-    margin: 5px;
+   
 `
 
 export const Installments = styled.span`
     font-family: 'Sunflower', sans-serif;
     font-weight: bold;
     color: #AAAAAA;
-    font-size: 1.86rem;
+    font-size: 1.5rem;
 
     text-align: center;
 
