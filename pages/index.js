@@ -183,7 +183,7 @@ Home.getInitialProps = async (ctx) =>{
 
     let postsInfo = []
 
-    console.log(posts[0].node)
+    //console.log(posts[0].node)
     for (let index = 0; index < posts.length; index++) {
         if(index < 5){
             postsInfo.push(posts[index].node)
