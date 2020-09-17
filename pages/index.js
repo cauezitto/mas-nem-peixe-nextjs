@@ -181,7 +181,9 @@ Home.getInitialProps = async (ctx) =>{
         responseType: "json"
     })
 
+    console.log('======================================')
     console.log(response.data)
+    console.log('=====================================')
 
     //console.log(response.data.graphql)
 
