@@ -176,12 +176,14 @@ export default function Home({postsInfo}) {
     )
 }
 
-/*Home.getInitialProps = async (ctx) =>{
+Home.getInitialProps = async (ctx) =>{
     const response = await axios.get(`https://www.instagram.com/masnempeixeoficial/?__a=1`)
+
+    console.log(response)
 
     //console.log(response.data.graphql)
 
-    const posts = response.data.graphql.user.edge_owner_to_timeline_media.edges//[0].node.display_url
+    /*const posts = response.data.graphql.user.edge_owner_to_timeline_media.edges//[0].node.display_url
 
     let postsInfo = []
 
@@ -194,5 +196,6 @@ export default function Home({postsInfo}) {
     }
 
     return {postsInfo}
+    */
+   return {data: 'data'}
 }
-*/
