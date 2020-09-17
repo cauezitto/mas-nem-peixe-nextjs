@@ -5,14 +5,12 @@ import {
     Line
 } from './styles.js'
 
-export default function DivisorHeader({title}) {
+export default function DivisorHeader({Component, lineWidth, fontSize}) {
     return (
-        <Container>
-             <Line/>
-                <h1>
-                    {title}
-                </h1>
-            <Line invert />
+        <Container fontSize = {fontSize} >
+             <Line width = {lineWidth} />
+                <Component/>
+            <Line invert width = {lineWidth} />
         </Container>
     )
 }

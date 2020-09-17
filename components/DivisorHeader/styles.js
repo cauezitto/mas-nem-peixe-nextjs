@@ -2,7 +2,7 @@ import styled, {css} from 'styled-components';
 
 const invertGradient = css`
   background: rgb(248,91,44);
-background: linear-gradient(157deg, rgba(248,91,44,1) 5%, rgba(40,152,158,1) 100%);
+  background: linear-gradient(157deg, rgba(248,91,44,1) 5%, rgba(40,152,158,1) 100%);
 `
 
 export const Container = styled.div`
@@ -13,29 +13,44 @@ export const Container = styled.div`
 
   justify-content: center;
   align-items: center;
-
   margin-top: 30px;
   margin-bottom: 30px;
 
-  margin: auto;
+  margin: 30px auto;
+
+  svg{
+      font-size: 2.5rem;
+      color: #FF5A00;
+      margin-bottom: 10px;
+
+      @media(max-width: 1217px){
+        display: none;
+      }
+    }
 
   h1{
     color: #FF5A00;
     font-family: 'manjari', sans-serif;
-    width: 40%;
+    width: 45%;
     text-align: center;
     text-justify: center;
-    font-size: 3rem;
+    line-height: 30px;
+    font-size: ${props => props.fontSize}rem;
 
     @media(max-width: 430px){
-    width: 30%;
+    width: 60%;
     margin: auto;
+    }
   }
+
+  strong{
+    color: #414040;
+    font-size: ${props => props.fontSize}rem;
   }
 `;
 
 export const Line = styled.div`
-  width: 75%;
+  width: ${props => props.width}%;
   height: 4px;
 
   background: rgb(40,152,158);
@@ -57,4 +72,9 @@ export const Line = styled.div`
   @media(max-width: 500px){
     width: 20%;
   }
+
+  @media(max-width: 430px){
+    width: 15%;
+    margin: auto;
+    }
 `
