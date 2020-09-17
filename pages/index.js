@@ -178,7 +178,10 @@ export default function Home({postsInfo}) {
 
 Home.getInitialProps = async (ctx) =>{
     const response = await axios.get(`https://www.instagram.com/masnempeixeoficial/?__a=1`, {
-        responseType: "json"
+        responseType: "json",
+        headers: {
+            'Content-Type': 'application/json'
+          }
     })
 
     console.log('======================================')
