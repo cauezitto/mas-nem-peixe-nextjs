@@ -167,14 +167,16 @@ export default function Home({postsInfo}) {
          )}
          lineWidth = {15} fontSize = {2}
          />
-        <InstagramPosts posts = {postsInfo} />
+        {
+            //<InstagramPosts posts = {postsInfo} />
+        }
 
         <Footer/>
        </>
     )
 }
 
-Home.getInitialProps = async (ctx) =>{
+/*Home.getInitialProps = async (ctx) =>{
     const response = await axios.get(`https://www.instagram.com/masnempeixeoficial/?__a=1`)
 
     //console.log(response.data.graphql)
@@ -193,3 +195,4 @@ Home.getInitialProps = async (ctx) =>{
 
     return {postsInfo}
 }
+*/
