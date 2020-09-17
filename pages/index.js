@@ -182,7 +182,7 @@ Home.getInitialProps = async (ctx) =>{
     })
 
     console.log('======================================')
-    console.log(response.data)
+    console.log(response.headers)
     console.log('=====================================')
 
     //console.log(response.data.graphql)
