@@ -29,12 +29,12 @@ export const SocialLinksContainer = styled.div`
 
     text-align: center;
 
-    svg{
+    a{
     color: #f85b2c;
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     margin: auto;
+    cursor: pointer;
   }
-
 
   @media(max-width: 800px){
    

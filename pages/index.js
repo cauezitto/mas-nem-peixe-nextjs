@@ -11,6 +11,7 @@ import Divisor from '../components/DivisorHeader'
 import ProductCard from '../components/ProductCard'
 
 import InstagramPosts from '../components/IntagramPosts'
+import EmailRegister from '../components/emailRegister'
 import Footer from '../components/Footer'
 
 import Head from 'next/head'
@@ -160,6 +161,7 @@ export default function Home() {
        <>
        <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet"></link>
         <title>
           Mas Nem Peixe?
         </title>
@@ -206,9 +208,8 @@ export default function Home() {
          )}
          lineWidth = {15} fontSize = {2}
          />
-        {
             <InstagramPosts posts = {postsData} />
-        }
+            <EmailRegister />
 
         <Footer/>
        </>

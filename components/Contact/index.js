@@ -16,13 +16,21 @@ export default function Contact() {
     return (
         <Container>
             <SocialLinksContainer>
-                <FiFacebook style = {{gridArea: 'left'}} />
+                <a href = 'https://www.facebook.com/Loja.MNP' target = '_blank'>
+                    <FiFacebook style = {{gridArea: 'left'}} />
+                </a>
 
-                <FiInstagram style = {{gridArea: 'center'}} />
- 
+                <a href = 'https://instagram.com/masnempeixeoficial' target = '_blank' >
+                    <FiInstagram style = {{gridArea: 'center'}} />
+                </a>
+
+                <a href = 'https://twitter.com/Masnempeixefc' target = '_blank'>
                 <FiTwitter style = {{gridArea: 'center'}} />
+                </a>
 
+                <a>
                 <FiMail style = {{gridArea: 'right'}} />
+                </a>
             </SocialLinksContainer>
 
             <WhatsappNumberContainer>

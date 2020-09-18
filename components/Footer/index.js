@@ -2,6 +2,7 @@ import React from 'react'
 
 import {
     Container,
+    Subcontainer,
     Title,
     Column,
     Text,
@@ -13,41 +14,57 @@ import {FiMail, FiInstagram, FiFacebook, FiPackage} from 'react-icons/fi'
 export default function Footer() {
     return (
         <Container>
+            <Subcontainer>
             <Column>
-                <Title>
+                <Title centered >
                     INSTITUCIONAL
                 </Title>
 
-                <Text clickable >
+                <Text clickable centered >
                     Sobre nós
                 </Text>
 
-                <Text clickable >
+                <Text clickable centered >
                     Contato
                 </Text>
 
-                <Text clickable >
+                <Text clickable centered >
                     Blog
                 </Text>
 
-                <Text clickable >
+                <Text clickable centered >
                     Troca e devolução
                 </Text>
             </Column>
 
+            <Column>
+                <Title centered >
+                    MINHA CONTA
+                </Title>
+
+                <Text clickable centered >
+                    Criar Conta
+                </Text>
+
+                <Text clickable centered >
+                    Minha conta
+                </Text>
+
+                <Text clickable centered >
+                    Meus pedidos
+                </Text>
+            </Column>
 
             <Column>
                 <Title centered >
-                    FALE CONOSCO
+                    HORRÁRIO DE ATENDIMENTO
                 </Title>
 
-               <IconContainer>
-                    <FiFacebook size = '25' />
-
-                    <FiInstagram size = '25' />
-
-                    <FiMail size = '25' />
-               </IconContainer>
+                <Text centered >
+                    Seg a Sex de 08h às 18h
+                    <br/>
+                    Sábado de 08 às 14h
+                </Text>
             </Column>
 
             <Column>
@@ -60,39 +77,50 @@ export default function Footer() {
                </IconContainer>
             </Column>
 
+
             <Column>
                 <Title centered >
-                    ENCOMENDA
+                    QUALIDADE E SEGURANÇA
                 </Title>
 
                <IconContainer>
-                   <FiPackage size = '30'/>
+                   <a href = 'https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fstonks-test-server.herokuapp.com%2F' target = '_blank' rel = 'Certificado google safe borwsing'>
+                    <img src = {'/googleSafeBrowsing.webp'} alt = "google safe browsing"/>
+                  </a>
+
+                  <a>
+                    <img src = {'/letsEncrypt.webp'} alt = "certificado lets encrypt"/>
+                  </a>
                </IconContainer>
             </Column>
+            </Subcontainer>
 
             <Column>
-                <Title >
-                    RECEBA NOVIDADES
+                <Title centered >
+                    FALE CONOSCO
                 </Title>
 
-               <Text>
-                    Cadastre-se e receba as
-                    <br/>
-                    novidades :
-               </Text>
+               <IconContainer>
+                   <a href = 'https://www.facebook.com/Loja.MNP' target = '_blank'>
+                    <FiFacebook size = '25' />
+                  </a>
 
-               <div className = 'input-container' >  
+                  <a href = 'https://www.instagram.com/masnempeixeoficial' target = '_blank'>
+                    <FiInstagram size = '25' />
+                  </a>
 
-                    <input
-                      placeholder = 'DIGITE SEU EMAIL'
-                      />
-
-                    <span className = 'confirm'>
-                        OK
-                    </span>
-               </div>
+                  <a>
+                    <FiMail size = '25' />
+                  </a>
+               </IconContainer>
             </Column>
 
         </Container>
     )
 }
+
+
+
+/*
+
+*/

@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100vw;
 
-  height: 200px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin: 30px auto;
 `;
 
 export const Button = styled.button`
@@ -15,7 +15,7 @@ export const Button = styled.button`
     border:#FF5A00 5px solid;
     border-radius: 8px;
 
-    height: 60px;
+    height: 55px;
     width: 230px;
 
     background: none;

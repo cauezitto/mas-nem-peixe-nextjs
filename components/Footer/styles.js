@@ -15,14 +15,22 @@ export const Container = styled.div`
 
   background: #03989E;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
-  width: 100vw;
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
+export const Subcontainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) ;
+  width: 90vw;
+  gap: 30px;
+
+  margin: auto;
+`
+
 export const Column = styled.div`
-  width: 200px;
+  width: 180px;
   display: flex;
   flex-direction: column;
 
@@ -71,7 +79,7 @@ export const Title = styled.h3`
  
 
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media(max-width: 430px){
     text-align: center;
@@ -90,7 +98,7 @@ export const Text = styled.strong`
   width: 100%;
   text-align: left;
 
-  margin-top: 5px;
+  margin-top: 3px;
 
   @media(max-width: 430px){
     text-align: center;
@@ -98,6 +106,7 @@ export const Text = styled.strong`
   }
 
   ${props => props.clickable && clickable}
+  ${props => props.centered && centered}
 `
 export const IconContainer = styled.div`
 
