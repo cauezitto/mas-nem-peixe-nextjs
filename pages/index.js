@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react'
 import Contact from '../components/Contact'
 import Header from '../components/Header'
 import SearchHeader from '../components/SearchHeader'
@@ -116,7 +117,45 @@ const Camisetas = [
     
 ]
 
-export default function Home({postsInfo}) { 
+export default function Home() { 
+
+    const [postsData, setPostsData] = useState(Array)
+
+    const loadPosts = async () => {
+        const response = await axios.get(`https://www.instagram.com/masnempeixeoficial/?__a=1`, {
+        responseType: "json",
+        headers: {
+            'Content-Type': 'application/json'
+          }
+    })
+
+    console.log('======================================')
+    console.log(response.headers)
+    console.log('=====================================')
+
+    //console.log(response.data.graphql)
+
+    const posts = response.data.graphql.user.edge_owner_to_timeline_media.edges//[0].node.display_url
+
+    let postsInfo = []
+
+    //console.log(posts[0].node)
+    for (let index = 0; index < posts.length; index++) {
+        if(index < 5){
+            postsInfo.push(posts[index].node)
+        }
+        
+    }
+
+    setPostsData(postsInfo)
+    
+    }
+
+
+    useEffect(()=>{
+        loadPosts()
+    },[])
+
     return (
        <>
        <Head>
@@ -168,7 +207,7 @@ export default function Home({postsInfo}) {
          lineWidth = {15} fontSize = {2}
          />
         {
-            //<InstagramPosts posts = {postsInfo} />
+            <InstagramPosts posts = {postsData} />
         }
 
         <Footer/>
@@ -177,32 +216,6 @@ export default function Home({postsInfo}) {
 }
 
 Home.getInitialProps = async (ctx) =>{
-    const response = await axios.get(`https://www.instagram.com/masnempeixeoficial/?__a=1`, {
-        responseType: "json",
-        headers: {
-            'Content-Type': 'application/json'
-          }
-    })
-
-    console.log('======================================')
-    console.log(response.headers)
-    console.log('=====================================')
-
-    //console.log(response.data.graphql)
-
-    /*const posts = response.data.graphql.user.edge_owner_to_timeline_media.edges//[0].node.display_url
-
-    let postsInfo = []
-
-    //console.log(posts[0].node)
-    for (let index = 0; index < posts.length; index++) {
-        if(index < 5){
-            postsInfo.push(posts[index].node)
-        }
-        
-    }
-
-    return {postsInfo}
-    */
+   
    return {data: 'data'}
 }
