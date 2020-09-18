@@ -46,17 +46,17 @@ export const SocialLinksContainer = styled.div`
 
       width: 100%;
 
-      svg{
+      a{
         margin: 10%;
       }
 
-      svg:first-child {
+      a:first-child {
         margin: unset;
         position: absolute;
         left: 9%;
       }
 
-      svg:last-child {
+      a:last-child {
         margin: unset;
         position: absolute;
         right: 9%;
