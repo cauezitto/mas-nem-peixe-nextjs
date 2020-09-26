@@ -18,17 +18,20 @@ export const Container = styled.div`
 
   margin: 30px auto;
 
-  svg{
+  .svg{
       font-size: 2.5rem;
       color: #FF5A00;
+      margin: auto;
       margin-bottom: 10px;
+
+      margin-right: 5px;
 
       @media(max-width: 1217px){
         display: none;
       }
     }
 
-  h1{
+  .h1{
     color: #FF5A00;
     font-family: 'manjari', sans-serif;
     width: 45%;
@@ -43,9 +46,25 @@ export const Container = styled.div`
     }
   }
 
-  strong{
+  .strong{
     color: #414040;
     font-size: ${props => props.fontSize}rem;
+  }
+
+  .grid-with-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 'icon . text text text';
+
+    .svg{
+      grid-area: icon;
+    }
+
+    .h1{
+      grid-area: text;
+      width: 100%100px;
+    }
   }
 `;
 
@@ -74,7 +93,7 @@ export const Line = styled.div`
   }
 
   @media(max-width: 430px){
-    width: 15%;
+    width: 8%;
     margin: auto;
     }
 `

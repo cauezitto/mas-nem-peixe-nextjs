@@ -23,6 +23,7 @@ import axios from 'axios'
 import {FiInstagram} from 'react-icons/fi'
   
 import {
+    Container,
     ProductsCardContainer
 } from '../styles/Home'
 
@@ -168,8 +169,9 @@ export default function Home() {
 
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
        </Head>
-       <Contact/>
-       <Header/>
+       <Container>
+       <Contact className = 'contact' />
+       <Header className = 'header' />
        <SearchHeader/>
        <Banner height = {300}/>
 
@@ -179,7 +181,7 @@ export default function Home() {
 
         <Divisor 
          Component = {()=>(
-            <h1>
+            <h1 className = "h1" >
                 CANECAS
             </h1>
          )}
@@ -195,15 +197,17 @@ export default function Home() {
 
         <Divisor Component = {()=>(
             <>
-            <FiInstagram/>
-            <h1>
-                <strong>
+
+            <FiInstagram className = 'svg'  />
+            <h1 className = "h1" >
+                <strong className = "strong" >
                 {' '}
                     SIGA NOSSO INSTAGRAM
                 </strong>
                 {' '}
                 @MASNEMPEIXEOFICIAL
             </h1>
+           
             </>
          )}
          lineWidth = {15} fontSize = {2}
@@ -212,6 +216,7 @@ export default function Home() {
             <EmailRegister />
 
         <Footer/>
+        </Container>
        </>
     )
 }

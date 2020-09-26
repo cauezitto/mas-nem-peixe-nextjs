@@ -38,6 +38,12 @@ export const Container = styled.div`
   @media(max-width: 600px){
     width: 150px;
   }
+  @media(max-width: 375px){
+    width: 125px;
+  }
+  @media(max-width: 350px){
+    width: 120px;
+  }
 `;
 
 export const Button = styled.button`

@@ -11,6 +11,7 @@ export default function Banner({height}) {
 
     const [image, setImage] = useState('/bannerHome1.webp')
     const [contador, setContador] = useState(0)
+    const [windowWidth, setWindowWidth] = useState(Number)
 
     useEffect(() =>{
         setTimeout(()=>{
@@ -19,24 +20,10 @@ export default function Banner({height}) {
     },[])
 
     useEffect(() =>{
-        setTimeout(()=>{
-            setContador(contador +1)
-            },8000)
+        setWindowWidth(screen.width)
 
-        switch((contador)){
-            case 1 :
-                setImage('/Banner.svg')
-                break
-            
-            case 2:
-                setImage('/bannerHome1.webp')
-                break
-        }
-
-        if(contador > 2){
-            setContador(0)
-        }
-    },[contador])
+        console.log(screen.width)
+    },[])
 
     return (
         <Container height = '500' >
@@ -49,11 +36,9 @@ export default function Banner({height}) {
             renderCenterRightControls={({ nextSlide }) => (
                 <button style = {{display: 'none'}}  onClick={nextSlide}/>
             )}  >
-            
-                    <img src="/Banner.svg"/>
-              
-    
-                    <img src="/bannerHome1.webp"/>
+                    <img src={windowWidth > 452? "/Banner.svg": 'banner1Mobile.jpeg'}/>
+
+                    <img src={windowWidth > 452? "/bannerHome1.webp": 'banner2Mobile.png'}/>
             
             </Carousel>
         </Container>

@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 export const ProductsCardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) ;
@@ -16,5 +21,6 @@ export const ProductsCardContainer = styled.div`
 
   @media(max-width: 400px){
     width: 100vw;
+    gap: 10px;
   }
 `;

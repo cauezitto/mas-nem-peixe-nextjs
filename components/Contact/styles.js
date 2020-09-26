@@ -12,7 +12,8 @@ export const Container = styled.div`
     height: 60px;
 
     margin-top: 10px;
-  
+
+    display: none;
   }
 `;
 
