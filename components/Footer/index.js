@@ -9,6 +9,8 @@ import {
     IconContainer
 } from './styles'
 
+import Description from './Description'
+
 import {FiMail, FiInstagram, FiFacebook, FiPackage} from 'react-icons/fi'
 
 export default function Footer() {
@@ -114,6 +116,10 @@ export default function Footer() {
                   </a>
                </IconContainer>
             </Column>
+
+            <Description/>
+
+
 
         </Container>
     )
