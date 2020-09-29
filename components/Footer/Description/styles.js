@@ -193,6 +193,7 @@ export const Container = styled.section`
                         ;
   .t1{
     justify-content: left;
+    text-align: left;
     height: 50px;
     font-size: 2.5rem;
     }
