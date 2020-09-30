@@ -10,7 +10,7 @@ import CTAbutton from '../components/CTAbutton'
 import Divisor from '../components/DivisorHeader'
 import ProductCard from '../components/ProductCard'
 
-import InstagramPosts from '../components/IntagramPosts'
+import InstagramPosts from '../components/InstagramPosts'
 import EmailRegister from '../components/emailRegister'
 import Footer from '../components/Footer'
 
@@ -18,7 +18,7 @@ import Head from 'next/head'
 
 //Binding events. 
 
-import axios from 'axios'
+import loadPosts from '../utils/loadPosts'
 
 import {FiInstagram} from 'react-icons/fi'
   
@@ -121,42 +121,20 @@ const Camisetas = [
 
 export default function Home() { 
 
-    const [postsData, setPostsData] = useState(Array)
+    const [postsData, setPostsData] = useState(loadPosts())
 
-    const loadPosts = async () => {
-        const response = await axios.get(`https://www.instagram.com/masnempeixeoficial/?__a=1`, {
-        responseType: "json",
-        headers: {
-            'Content-Type': 'application/json'
-          }
-    })
+    async function loadData (){
+        const posts = await loadPosts()
 
-    console.log('======================================')
-    console.log(response.headers)
-    console.log('=====================================')
-
-    //console.log(response.data.graphql)
-
-    const posts = response.data.graphql.user.edge_owner_to_timeline_media.edges//[0].node.display_url
-
-    let postsInfo = []
-
-    //console.log(posts[0].node)
-    for (let index = 0; index < posts.length; index++) {
-        if(index < 5){
-            postsInfo.push(posts[index].node)
-        }
-        
+        console.log(posts)
+        setPostsData(posts)
     }
 
-    setPostsData(postsInfo)
-    
-    }
-
-
+   
     useEffect(()=>{
-        loadPosts()
+        loadData()
     },[])
+    
 
     return (
        <>
@@ -174,6 +152,7 @@ export default function Home() {
        <Contact className = 'contact' />
        <Header className = 'header' />
        <SearchHeader/>
+       <main>
        <Banner height = {300}/>
 
        <InstalmentsAndPayments/>
@@ -213,9 +192,10 @@ export default function Home() {
          )}
          lineWidth = {15} fontSize = {2}
          />
-            <InstagramPosts posts = {postsData} />
-            <EmailRegister />
+           <InstagramPosts posts = {postsData} />
 
+            <EmailRegister />
+        </main>
         <Footer/>
         
         </Container>

@@ -3,6 +3,7 @@ import React from 'react';
 import './styles.css'
 import {FiMessageSquare, FiMenu, FiHeart, FiShoppingBag, FiUser} from 'react-icons/fi'
 import {HiOutlineMenu} from 'react-icons/hi'
+import Link from 'next/link';
 
 function Header() {
   return (
@@ -10,11 +11,13 @@ function Header() {
       <header className = 'header'>
         <FiShoppingBag className = "mobile-cart" />
 
-        <div className = 'logoContainer' >
-         <img src = {'/logo.webp'} />
-        </div>
+        <Link href = '/' >
+          <a className = 'logoContainer' >
+          <img src = {'/logo.webp'} />
+          </a>
+        </Link>
 
-        <div className = 'linksContainer' >
+        <nav className = 'linksContainer' >
           <strong className = 'link'>
             <FiMessageSquare />
             FALE CONOSCO
@@ -34,7 +37,7 @@ function Header() {
             <FiShoppingBag />
             CARRINHO
           </strong>
-        </div>
+        </nav>
 
         <HiOutlineMenu className = 'menu' />
       </header>

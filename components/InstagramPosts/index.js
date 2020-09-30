@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import ItemsCarousel from 'react-items-carousel';
 import {
     Container
@@ -6,9 +6,20 @@ import {
 
 import {IoIosArrowForward, IoIosArrowBack} from 'react-icons/io'
 
-function InstagramPosts({posts}){
+import loadPosts from '../../utils/loadPosts'
+
+function InstagramPosts(){
     const [activeItemIndex, setActiveItemIndex] = useState(0);
+    const [posts, setPosts] = useState(Array)
     const chevronWidth = 40;
+
+    const load = async () =>{
+        setPosts(await loadPosts())
+    }
+
+    useEffect(() => {
+        load()
+    }, [])
     return(
         <Container>
 
