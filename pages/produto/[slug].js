@@ -29,6 +29,11 @@ export default function Product({product}) {
         </title>
 
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name="twitter:card" content="product" data-head-react="true"/>
+        <meta name="twitter:site" content="Mercado Livre" data-head-react="true"/>
+        <meta name="twitter:title" content="Furadeira Parafusadeira Impacto 650w Bfu01m Britânia Maleta" data-head-react="true"/>
+        <meta name="twitter:description" content="Seja bem vindo a DD Máquinas !DescriçãoA Furadeira de Impacto 2 em 1 BFU01M possui qualidade e for&amp;ccedila para você executar os mais diversos trabalhos com apenas um equipamento. Cord&amp;atildeo el&amp;eacutetrico dá autonomia durante o uso e para as perfuraç&amp;otildees mais dif&amp;iacuteceis ela tem a funç&amp;atildeo Martelete.- Especificaç&amp;otildees T&amp;eacutecnicas:- Voltagem 110v- 650 W de pot&amp;ecircncia- Funç&amp;atildeo Impacto 48000 IPM- Cord&amp;atildeo el&amp;eacutetrico com 1m- Mandril 3/8”- Acompanha chave para mandril- Possui funç&amp;atildeo martelete- Possui seletor de martelete/perfuraç&amp;atildeo- Trava de gatilho- Revers&amp;atildeo de rotaç&amp;atildeo- Di&amp;acircmetro de perfuraç&amp;atildeo em a&amp;ccedilo: 10mm- Di&amp;acircmetro de perfuraç&amp;atildeo em madeira: 20mm- Di&amp;acircmetro de perfuraç&amp;atildeo em concreto: 10mm- Acompanha maleta pl&amp;aacutestica- Altura: 24,7cm- Largura: 24,5cm- Profundidade: 7cm- Peso: 1,26KgImagens meramente ilustrativas **" data-head-react="true"/>
+        <meta name="twitter:image" content="https://http2.mlstatic.com/D_NQ_NP_651102-MLB43652136622_102020-O.webp" data-head-react="true"/>
         </Head>
         <Contact/>
         <Header/>
