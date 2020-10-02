@@ -8,6 +8,7 @@ import Head from 'next/head'
 import Header from '../../components/Header'
 import Contact from '../../components/Contact'
 import SearchHeader from '../../components/SearchHeader'
+import ProductSection from '../../components/ProductSection'
 import Divisor from '../../components/DivisorHeader'
 import InstalmentsAndPayments from '../../components/InstalmentsAndPayments'
 import InstagramPosts from '../../components/InstagramPosts'
@@ -15,7 +16,7 @@ import EmailRegister from '../../components/emailRegister'
 import Footer from '../../components/Footer'
 
 
-export default function Product({slug}) {
+export default function Product({product}) {
 
     return (
         <>
@@ -24,16 +25,18 @@ export default function Product({slug}) {
         <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"></link>
         <title>
-          {slug}
+          {product.slug}
         </title>
 
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         </Head>
         <Contact/>
         <Header/>
-        <SearchHeader/>
+        <SearchHeader />
+        <br/>
         <InstalmentsAndPayments />
-
+        <ProductSection product = {product} />
+       
         <Divisor Component = {()=>(
             <>
 
@@ -62,11 +65,21 @@ export async function getStaticProps({params}) {
 
     console.log(string_to_slug('Caneca "Mas nem peixe?"'))
 
+    const product = {
+        id: 1,
+        title: 'Mas Nem Peixe?',
+        price: '34.00',
+        category: 'Caneca',
+        image: '/caneca.webp',
+        slug: 'caneca-mas-nem-peixe',
+        reference: 'CANEMNP'
+    }
+
 
 
     return {
         props: {
-            slug: params.slug
+            product
         }
     }
   }
@@ -82,8 +95,6 @@ export async function getStaticPaths() {
         }
         ],
 */
-
-
     return {
     paths:[
             {
