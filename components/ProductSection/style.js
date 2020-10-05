@@ -259,12 +259,7 @@ export const BuyorCart = styled.form`
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.83);
 
-    :hover{
-      transition: 200ms;
-      background-color: #F85B2C;
-      color: #f2f2f2;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+    
   }
 `
 
@@ -292,7 +287,7 @@ export const Shipment = styled.div`
     border-top-right-radius: 0;
     border-right: 0;
     height: 28px;
-    width: 160px;
+    width: 110px;
 
     background: #fafafa;
   }
@@ -313,7 +308,7 @@ export const Shipment = styled.div`
       border-top-right-radius: 5px;
 
       height: 32px;
-      width: 30px;
+      width: 50px;
     }
 `
 

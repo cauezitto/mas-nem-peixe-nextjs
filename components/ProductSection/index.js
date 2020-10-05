@@ -35,7 +35,13 @@ import {cepMask} from '../../utils/inputMask'
 export default function ProductSection({product}) {
 
     const [cep, setCep] = useState('')
+    const [quant, setQuant] = useState(1)
 
+    const subQuant = () =>{
+        if(quant>1){
+            setQuant(quant -1)
+        }
+    }
     return (
         <Container>
             <Wrapper>
@@ -121,7 +127,8 @@ export default function ProductSection({product}) {
                                 itemprop="price" 
                                 content="33.99"
                                 className = 'price'
-                                >33,99
+                                >
+                                    {product.price}
                             </span>
                         </span>
 
@@ -130,7 +137,7 @@ export default function ProductSection({product}) {
                         >
                             ou 6x  sem juros {' '}
                             <strong>
-                                R$ 5,60
+                                R$ {Number(product.price/6).toFixed(2)}
                             </strong>
                         </span>
 
@@ -140,15 +147,15 @@ export default function ProductSection({product}) {
                     </PriceAndInstalments>
 
                     <Quant>
-                        <button>
+                        <button onClick={subQuant} >
                             <AiOutlineMinusCircle/>
                         </button>
 
                         <span>
-                            1
+                            {quant}
                         </span>
 
-                        <button>
+                        <button onClick = {()=>setQuant(quant + 1)} >
                             <AiOutlinePlusCircle/>
                         </button>
                     </Quant>
