@@ -23,7 +23,7 @@ export const SocialLinksContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    margin-left: 5%;
+    margin-left: 10%;
 
     height: 100%;
     width: 230px;
@@ -67,7 +67,7 @@ export const SocialLinksContainer = styled.div`
 
 export const WhatsappNumberContainer = styled.div`
   position: absolute;
-  right: 7%;
+  right: 10%;
   height: 100%;
   display: flex;
 

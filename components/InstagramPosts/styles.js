@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
-  width: 90vw;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) ;
+  width: 80vw;
   gap: 30px;
 
   margin: 30px auto;

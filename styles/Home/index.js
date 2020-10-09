@@ -7,8 +7,8 @@ export const Container = styled.div`
 
 export const ProductsCardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) ;
-  width: 90vw;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)) ;
+  width: 80vw;
   gap: 30px;
 
   margin: auto;

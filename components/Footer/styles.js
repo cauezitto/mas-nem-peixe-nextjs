@@ -23,7 +23,7 @@ export const Container = styled.div`
 export const Subcontainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) ;
-  width: 90vw;
+  width: 80vw;
   gap: 30px;
 
   margin: auto;

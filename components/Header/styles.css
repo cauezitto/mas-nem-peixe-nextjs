@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
 .container{
-    width: 100vw;
+    width: 80vw;
     display: flex;
 
     justify-content: center;
@@ -18,7 +18,7 @@
     font-size: 5.4rem;
     position: absolute;
 
-    right: 7%;
+    right: 10%;
 
     align-self: center;
 
@@ -31,7 +31,7 @@
     font-size: 6rem;
     position: absolute;
 
-    left: 7%;
+    left: 12%;
 
     align-self: center;
 
@@ -45,7 +45,7 @@
     position: absolute;
     align-items: center;
 
-    margin-left: 5%;
+    margin-left: 10%;
 
     height: 100%;
 }
@@ -66,7 +66,7 @@
     width: 50%;
 
     justify-content: center;
-    margin-right: 60px;
+    margin-right: 100px;
 
 }
 
@@ -117,16 +117,20 @@
 
     .searchInputContainer{
         position: absolute;
+        right: 10%;
     }
 }
 
-@media(max-width: 420px){
+@media(max-width: 425px){
 
     .logoContainer img{
         width: 60%;
     }
 
     .menu{
-        right: 20px;
+        left: 10%;
+    }
+    .mobile-cart{
+        right: 10%;
     }
 }

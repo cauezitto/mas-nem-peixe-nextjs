@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.a`
   cursor: pointer;
   
-  width: 250px;
+  width: 230px;
 
   margin: auto;
 

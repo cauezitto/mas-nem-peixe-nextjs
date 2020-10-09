@@ -7,7 +7,7 @@ const invertGradient = css`
 
 export const Container = styled.div`
   height: 50px;
-  width: 90vw;
+  width: 80vw;
  
   display: flex;
 
