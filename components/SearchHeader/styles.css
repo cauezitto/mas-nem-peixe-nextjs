@@ -79,10 +79,16 @@
 @media(max-width: 722px){
 
     .container{
+        display: flex;
         justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
     }
 
     .searchInputContainer{
+        margin: auto;
+        position: unset;
         
     }
 
@@ -91,12 +97,16 @@
     }
 }
 
-@media(max-width: 420px){
+@media(max-width: 425px){
+
+    .container{
+        align-items: center;
+    }
 
     .searchInputContainer{
         width: 90%;
+
         margin: auto;
-        align-self: center;
     }
 
     .searchInputContainer input{
