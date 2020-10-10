@@ -67,7 +67,7 @@ export const SocialLinksContainer = styled.div`
 
 export const WhatsappNumberContainer = styled.div`
   position: absolute;
-  right: 10%;
+  right: 12%;
   height: 100%;
   display: flex;
 

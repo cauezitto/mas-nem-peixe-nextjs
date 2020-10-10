@@ -58,7 +58,7 @@ export const Form = styled.form`
     width: 50%;
 
     input{
-        width: 50%;
+        width: 60%;
         height: 30px;
         background: #F1F1F1;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,7 +72,7 @@ export const Form = styled.form`
 
     button{
         margin: auto;
-        width: 150px;
+        width: 170px;
         height: 30px;
 
         border-radius: 10px;

@@ -144,12 +144,12 @@ export const ColoredMediaContainer = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 13px;
     border-radius: 3px;
     color: #fafafa;
     background-color: ${props => props.color};
     font-family: sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 
     margin: 10px;
     cursor: pointer;
