@@ -16,7 +16,9 @@ export const ProductsCardContainer = styled.div`
   justify-content: center;
 
   @media(max-width: 600px){
-    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr)) ;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
+    width: 90vw;
   }
 
   @media(max-width: 400px){
