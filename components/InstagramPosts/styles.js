@@ -17,6 +17,11 @@ export const Container = styled.div`
   img{
       max-width: 100%;
       border-radius: 5px;
+      border: 2px #f1f1f1 solid; 
+
+      :hover{
+        border: 2px #28989E solid;
+      }
   }
 
   @media(max-width:600px){
