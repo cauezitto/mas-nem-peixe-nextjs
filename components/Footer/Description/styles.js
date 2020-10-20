@@ -5,7 +5,7 @@ export const Container = styled.section`
   width: 80%;
   min-height: 100px;
 
-  padding: 0 10%;
+  padding: 0 10% 20px 10%;
 
   background-color: #E9EAE9;
 
@@ -122,10 +122,12 @@ export const Container = styled.section`
 
   .t2{
     grid-area: title2;
+    font-weight: bold;
   }
 
   .t3{
     grid-area: title3;
+    font-weight: bold;
   }
 
   .p1{

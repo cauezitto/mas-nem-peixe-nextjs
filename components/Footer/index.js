@@ -11,7 +11,13 @@ import {
 
 import Description from './Description'
 
-import {FiMail, FiInstagram, FiFacebook, FiPackage} from 'react-icons/fi'
+import {
+    FiMail, 
+    FiInstagram, 
+    FiFacebook, 
+    FiPackage,
+    FiLinkedin
+} from 'react-icons/fi'
 
 export default function Footer() {
     return (
@@ -59,7 +65,7 @@ export default function Footer() {
 
             <Column>
                 <Title centered >
-                    HORRÁRIO DE ATENDIMENTO
+                    HORÁRIO DE ATENDIMENTO
                 </Title>
 
                 <Text centered >
@@ -81,12 +87,26 @@ export default function Footer() {
 
 
             <Column>
-                <Title centered >
+                <Title 
+                    centered
+                    style = {{
+                        marginLeft: 20
+                    }}
+                     >
                     QUALIDADE E SEGURANÇA
                 </Title>
 
-               <IconContainer>
-                   <a href = 'https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fstonks-test-server.herokuapp.com%2F' target = '_blank' rel = 'Certificado google safe borwsing'>
+               <IconContainer 
+                style = {{
+                    width: 250,
+                    marginLeft: -35
+                }}
+                >
+                   <a 
+                    href = 'https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fstonks-test-server.herokuapp.com%2F' 
+                    target = '_blank' 
+                    rel = 'Certificado google safe borwsing'
+                    >
                     <img src = {'/googleSafeBrowsing.webp'} alt = "google safe browsing"/>
                   </a>
 
@@ -103,16 +123,16 @@ export default function Footer() {
                 </Title>
 
                <IconContainer>
-                   <a href = 'https://www.facebook.com/Loja.MNP' target = '_blank'>
+                   <a className = 'contact-link' href = 'https://www.facebook.com/Loja.MNP' target = '_blank'>
                     <FiFacebook size = '25' />
                   </a>
 
-                  <a href = 'https://www.instagram.com/masnempeixeoficial' target = '_blank'>
+                  <a className = 'contact-link' href = 'https://www.instagram.com/masnempeixeoficial' target = '_blank'>
                     <FiInstagram size = '25' />
                   </a>
 
-                  <a>
-                    <FiMail size = '25' />
+                  <a className = 'contact-link' href = 'https://www.linkedin.com/company/mas-nem-peixe/?viewAsMember=true' target = '_blank' >
+                    <FiLinkedin size = '25' />
                   </a>
                </IconContainer>
             </Column>

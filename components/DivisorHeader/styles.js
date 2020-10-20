@@ -1,6 +1,8 @@
 import styled, {css} from 'styled-components';
 
 const invertGradient = css`
+  margin: auto;
+  margin-right: 0;
   background: rgb(248,91,44);
   background: linear-gradient(157deg, rgba(248,91,44,1) 5%, rgba(40,152,158,1) 100%);
 `
@@ -78,6 +80,7 @@ export const Line = styled.div`
   position: relative;
 
   margin: auto;
+  margin-left: 0;
 
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

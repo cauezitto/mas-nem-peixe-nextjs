@@ -12,6 +12,12 @@ import {
     FiTwitter,
     FiPhone
 } from 'react-icons/fi'
+
+import {
+    FaLinkedin,
+    FaLinkedinIn
+} from 'react-icons/fa'
+
 export default function Contact() {
     return (
         <Container>
@@ -28,8 +34,8 @@ export default function Contact() {
                 <FiTwitter style = {{gridArea: 'center'}} />
                 </a>
 
-                <a>
-                <FiMail style = {{gridArea: 'right'}} />
+                <a href = 'https://www.linkedin.com/company/mas-nem-peixe/?viewAsMember=true' target = '_blank' >
+                <FiLinkedin style = {{gridArea: 'right'}} />
                 </a>
             </SocialLinksContainer>
 

@@ -7,7 +7,7 @@ export const Container = styled.footer`
   justify-content: center;
 
   width: 80%;
-  height: 50px;
+  height: 65px;
   margin: auto;
 
   background-color: #fafafa;
@@ -33,12 +33,12 @@ export const Container = styled.footer`
         margin-right: 20px;
     }
     text{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-family: 'Ubuntu Condensed', sans-serif;
 
     }
     strong{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-family: 'Ubuntu Condensed', sans-serif;
     }
   }

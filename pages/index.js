@@ -190,7 +190,7 @@ export default function Home() {
            
             </>
          )}
-         lineWidth = {15} fontSize = {2}
+         lineWidth = {24} fontSize = {2}
          />
            <InstagramPosts posts = {postsData} />
 

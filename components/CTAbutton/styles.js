@@ -15,8 +15,8 @@ export const Button = styled.button`
     border:#FF5A00 5px solid;
     border-radius: 8px;
 
-    height: 55px;
-    width: 230px;
+    height: 45px;
+    width: 210px;
 
     background: none;
 
@@ -29,7 +29,7 @@ export const Button = styled.button`
     strong{
       color: #414040;
       font-family: 'Ubuntu Condensed', sans-serif;
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       font-weight: bolder;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -40,7 +40,6 @@ export const Button = styled.button`
         strong{
         color: #fafafa;
         font-family: 'Ubuntu Condensed', sans-serif;
-        font-size: 18pt;
         }
     }
 `

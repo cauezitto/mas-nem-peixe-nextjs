@@ -11,7 +11,8 @@
     display: flex;
     position: relative;
     
-    height: 100px;
+    height: 70px;
+    margin-bottom: 10px;
 }
 
 .mobile-cart{
@@ -44,6 +45,7 @@
     display: flex;
     position: absolute;
     align-items: center;
+   
 
     margin-left: 10%;
 
@@ -51,8 +53,10 @@
 }
 
 .logoContainer img{
+
+    margin: auto;
     
-    width: 80%;
+    width: 70%;
 
     margin: 8px;
 

@@ -32,7 +32,7 @@ export const SocialLinksContainer = styled.div`
 
     a{
     color: #f85b2c;
-    font-size: 3.1rem;
+    font-size: 2.5rem;
     margin: auto;
     cursor: pointer;
   }

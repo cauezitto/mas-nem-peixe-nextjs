@@ -29,6 +29,7 @@ export const Wrapper = styled.div`
 
 export const Panel = styled.div`
   grid-area: panel;
+  flex-direction: column;
 
   h1{
     font-family: 'Manjari', sans-serif;
@@ -41,12 +42,17 @@ export const Panel = styled.div`
   .reference{
     font-family: 'Ubuntu', sans-serif;
     margin-left: 10px;
+    margin-bottom: 50px;
+  }
+
+  .reference strong, span{
+    font-size: 1.4rem;
   }
 
   .favorite-container{
       display: flex;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 30px;
       margin-left: 10px;
       font-family: 'Ubuntu', sans-serif;
 
@@ -124,7 +130,7 @@ export const Share = styled.div`
             justify-content: center;
             color: #28989e;
             margin: 10px;
-            font-size: 2rem;
+            font-size: 1.8rem;
             border: 2px solid;
             border-radius: 10px;
             font-weight: bold;
@@ -149,7 +155,7 @@ export const ColoredMediaContainer = styled.a`
     color: #fafafa;
     background-color: ${props => props.color};
     font-family: sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 
     margin: 10px;
     cursor: pointer;
@@ -203,10 +209,11 @@ export const Quant = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 9em;
+  width: 7em;
   height: 40px;
   border: 2px solid #C2C2C2;
   border-radius: 10px;
+  margin-left: 10px;
 
   button{
     display: flex;
@@ -219,6 +226,7 @@ export const Quant = styled.div`
   span{
     font-family: 'Ubuntu', sans-serif;
     margin: auto;
+    font-size: 1.8rem;
   }
 `
 
@@ -304,8 +312,8 @@ export const Shipment = styled.div`
       font-weight: bold;
       cursor: pointer;
 
-      border-bottom-right-radius: 5px;
-      border-top-right-radius: 5px;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
 
       height: 32px;
       width: 50px;

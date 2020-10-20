@@ -202,13 +202,13 @@ export default function Product({product}) {
 
         <Divisor Component = {()=>(
             <>
-            <h1 className = "h1" style = {{fontSize: '2.2rem'}} >
-                Descrição
+            <h1 className = "h1" style = {{fontSize: '2.6rem'}} >
+                DESCRIÇÃO
             </h1>
            
             </>
          )}
-         lineWidth = {50} fontSize = {2}
+         lineWidth = {60} fontSize = {2}
          />
 
  
@@ -240,7 +240,7 @@ export default function Product({product}) {
            
             </>
          )}
-         lineWidth = {20} fontSize = {2}
+         lineWidth = {24} fontSize = {2}
          />
         <InstagramPosts/>
         <EmailRegister/>

@@ -117,18 +117,25 @@ export const IconContainer = styled.div`
   justify-content: center;
   
   svg{
+      
+  }
+
+  .contact-link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; 
       background: #FF5A00;
       color: #fafafa;
-      padding: 8px;
-      border-radius: 50%;
-
+      padding: 10px;
       margin: 10px;
-
       cursor: pointer;
   }
 
   img{
-      width: 90%;
+      width: 80%;
       margin: 10px;
   }
+
+  
 `
