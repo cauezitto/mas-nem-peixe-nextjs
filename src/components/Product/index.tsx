@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import * as S from './styles'
 
-type Props = {
+export type Props = {
   imageUrl: string
   title: string
   slug: string
@@ -19,7 +19,7 @@ const Product = ({ title, imageUrl, price, slug }: Props) => (
 
         <S.Title>
           {' '}
-          CANECA <br /> {`"MAS NEM PEIXE?"`}
+          CANECA <br /> {title}
         </S.Title>
         <S.Price>{`R$${price.toFixed(2)}`}</S.Price>
         <S.Installments>{`ou então 6x R$${Number(price / 6).toFixed(
