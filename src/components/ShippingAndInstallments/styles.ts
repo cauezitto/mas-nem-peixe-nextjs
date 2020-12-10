@@ -16,8 +16,9 @@ const displayUnset = css`
 
 export const Wrapper = styled.section<Props>`
   ${({ theme, desktop = true, mobile = false }) => css`
+    margin-top: ${theme.spacings.small};
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: ${theme.colors.white};
     display: flex;
     align-items: center;

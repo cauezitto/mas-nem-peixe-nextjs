@@ -32,7 +32,7 @@ export default {
       large: '1.8rem',
       xlarge: '2.2rem',
       xxlarge: '2.4rem',
-      xxxlarge: '2,8rem'
+      xxxlarge: '2.8rem'
     }
   },
   colors: {
@@ -40,6 +40,7 @@ export default {
     white: '#fff',
     black: '#000000',
     gray: '#AAAAAA',
+    darkGray: '#4C4949',
     orange: '#FF5A00',
     cyan: '#03989E'
   },

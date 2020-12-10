@@ -104,7 +104,7 @@ export const Wrapper = styled.header`
     }
 
     .search-container {
-      height: 50px;
+      height: 60px;
       background-color: ${theme.colors.orange};
       display: flex;
       justify-content: center;
@@ -117,7 +117,7 @@ export const Wrapper = styled.header`
       justify-content: space-between;
       border-radius: 50px;
       background-color: ${theme.colors.silver};
-      padding: 2px 10px;
+      padding: 3px 10px;
     }
 
     .input-container input {

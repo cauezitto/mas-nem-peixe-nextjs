@@ -8,6 +8,7 @@ export type Props = {
   fontSize?: 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge'
   textShadow?: boolean
   fontWeight?: 'normal' | 'semiBold' | 'bold'
+  fontFamily?: 'ubuntu' | 'ubuntuCondensed' | 'manjari'
 }
 
 const Button = ({
@@ -18,7 +19,8 @@ const Button = ({
   size = 'small',
   fontSize = 'small',
   fontWeight = 'normal',
-  textShadow = false
+  textShadow = false,
+  fontFamily = 'ubuntuCondensed'
 }: Props) => (
   <S.Wrapper
     color={color}
@@ -28,6 +30,7 @@ const Button = ({
     fontSize={fontSize}
     textShadow={textShadow}
     fontWeight={fontWeight}
+    fontFamily={fontFamily}
   >
     {text}
   </S.Wrapper>

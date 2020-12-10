@@ -16,8 +16,8 @@ const buttonModifier = {
       padding: 15px 30px;
     `,
     block: () => css`
-      min-width: 90%;
-      padding: 15px 30px;
+      min-width: 100%;
+      padding: 10px 30px;
     `
   },
   background: {
@@ -49,13 +49,14 @@ export const Wrapper = styled.button<Props>`
     size = 'small',
     fontSize = 'small',
     textShadow = false,
-    fontWeight = 'normal'
+    fontWeight = 'normal',
+    fontFamily = 'ubuntuCondensed'
   }) => css`
     transition: 200ms;
     border-width: 3px;
     cursor: pointer;
     border-style: solid;
-    font-family: ${theme.font.family.ubuntuCondensed};
+    font-family: ${theme.font.family[fontFamily!]};
     border-color: ${theme.colors.orange};
     color: ${theme.colors[color!]};
     border-radius: ${theme.border.radius[radius]};
