@@ -82,6 +82,10 @@ const GlobalStyles = createGlobalStyle`
       font-size: 62.5%;
     }
 
+    button {
+      background: none;
+    }
+
     body {
       font-family: ${theme.font.family.ubuntuCondensed};
       font-size: ${theme.font.sizes.medium};

@@ -67,8 +67,12 @@ const Header = () => (
             </li>
             <li>
               {' '}
-              <FiShoppingBag />
-              CARRINHO
+              <Link href="/carrinho" passHref>
+                <a>
+                  <FiShoppingBag />
+                  CARRINHO
+                </a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -6,7 +6,7 @@ const ProductList = styled.ul`
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
     gap: ${theme.spacings.small};
-    margin: auto;
+    margin: ${theme.spacings.medium} auto;
     align-items: center;
     justify-content: space-between;
 

@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
+import { Props } from '.'
 
-export const Wrapper = styled.div`
-  ${({ theme }) => css`
+export const Wrapper = styled.div<Props>`
+  ${({ theme, size }) => css`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,7 +15,7 @@ export const Wrapper = styled.div`
       font-family: ${theme.font.family.manjari};
       font-weight: ${theme.font.bold};
       color: ${theme.colors.orange};
-      font-size: ${theme.font.sizes.xxlarge};
+      font-size: ${size ? theme.font.sizes[size] : theme.font.sizes.xxlarge};
       margin: 0;
       padding: 0;
       display: flex;

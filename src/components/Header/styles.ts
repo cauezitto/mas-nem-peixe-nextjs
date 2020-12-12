@@ -85,6 +85,13 @@ export const Wrapper = styled.header`
       list-style: none;
     }
 
+    .linksContainer a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: ${theme.colors.black};
+    }
+
     .linksContainer ul li {
       display: flex;
       align-items: center;
