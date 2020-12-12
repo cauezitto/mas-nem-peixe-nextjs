@@ -1,7 +1,7 @@
 import { FiMinusCircle, FiPlusCircle } from 'react-icons/fi'
 import * as S from './styles'
 
-type Props = {
+export type Props = {
   quant: number
   handleAdd: VoidFunction
   handleSub: VoidFunction
