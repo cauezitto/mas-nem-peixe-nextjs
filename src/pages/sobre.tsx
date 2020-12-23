@@ -44,7 +44,7 @@ const sobre = () => {
           </div>
 
           <div className="line1">
-            <Image src="/img/line1.png" height={550} width={500} alt="line" />
+            <img src="/img/line1.png" alt="line" />
           </div>
 
           <div className="instagram">
@@ -79,7 +79,7 @@ const sobre = () => {
           </div>
 
           <div className="line2">
-            <Image src="/img/line2.png" height={500} width={250} alt="line" />
+            <img src="/img/line2.png" alt="line" />
           </div>
 
           <div className="loja">
@@ -112,7 +112,7 @@ const sobre = () => {
           </div>
 
           <div className="line3">
-            <Image src="/img/line3.png" height={300} width={150} alt="line" />
+            <img src="/img/line3.png" alt="line" />
           </div>
 
           <div className="wait">

@@ -16,9 +16,8 @@ const Sobre = styled.div`
         'line1 line1 line1'
         '. instagram instagram'
         '. instagram instagram'
-        'polvo polvo line2'
-        '. . line2'
-        'loja loja loja'
+        'polvo . line2'
+        'loja loja line2'
         '. line3 .'
         '. wait wave';
       gap: 20px;
@@ -30,6 +29,10 @@ const Sobre = styled.div`
 
     .line1 {
       grid-area: line1;
+
+      img {
+        width: 52%;
+      }
     }
 
     .instagram {
@@ -38,10 +41,17 @@ const Sobre = styled.div`
 
     .line2 {
       grid-area: line2;
+
+      img {
+        height: 65%;
+      }
     }
 
     .polvo {
       grid-area: polvo;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .loja {
@@ -50,6 +60,10 @@ const Sobre = styled.div`
 
     .line3 {
       grid-area: line3;
+
+      img {
+        width: 52%;
+      }
     }
 
     .wait {
