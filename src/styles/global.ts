@@ -98,6 +98,57 @@ const GlobalStyles = createGlobalStyle`
       background: none;
     }
 
+    .start {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .end {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+
+    .block {
+      width: 100%;
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+    }
+
+    .space-between,
+    .space-between-variable {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .unstyled-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .xxlarge {
+      font-size: ${theme.font.sizes.xxlarge};
+    }
+
+    .extra {
+      font-size: ${theme.font.sizes.extra};
+    }
+
+    .bold {
+      font-weight: ${theme.font.bold};
+    }
+
+    .semiBold {
+      font-weight: ${theme.font.semiBold};
+    }
+
+    .light {
+      font-weight: ${theme.font.light};
+    }
+
     @media (max-width: 1024px) {
       html {
         font-size: 60%;

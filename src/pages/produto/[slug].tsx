@@ -120,13 +120,6 @@ const Produto = () => {
       </section>
 
       <section>
-        <DivisorHeader>
-          <h2 className="variable">
-            <FiInstagram /> &nbsp; <b>SIGA NOSSO INSTAGRAM</b>
-          </h2>
-          <h2 className="variable">&nbsp; @MASNEMPEIXEOFICIAL</h2>
-        </DivisorHeader>
-
         <InstagramPosts />
       </section>
       <Footer />

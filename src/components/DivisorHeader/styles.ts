@@ -2,17 +2,23 @@ import styled, { css } from 'styled-components'
 import { Props } from '.'
 
 export const Wrapper = styled.div<Props>`
-  ${({ theme, size }) => css`
+  ${({ theme, size, font = 'manjari', margin }) => css`
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: ${theme.spacings.xxlarge} 0;
+    ${margin
+      ? css`
+          margin: ${margin};
+        `
+      : css`
+          margin: ${theme.spacings.xxlarge} 0;
+        `}
 
     h1,
     h2,
     h3 {
-      font-family: ${theme.font.family.manjari};
+      font-family: ${theme.font.family[font]};
       font-weight: ${theme.font.bold};
       color: ${theme.colors.orange};
       font-size: ${size ? theme.font.sizes[size] : theme.font.sizes.xxlarge};

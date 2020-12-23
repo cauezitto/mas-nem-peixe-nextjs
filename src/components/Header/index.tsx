@@ -55,7 +55,11 @@ const Header = () => (
         <nav className="linksContainer">
           <ul>
             <li>
-              <FiMessageSquare /> FALE CONOSCO
+              <Link href="/contato" passHref>
+                <a>
+                  <FiMessageSquare /> FALE CONOSCO
+                </a>
+              </Link>
             </li>
             <li>
               {' '}

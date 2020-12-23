@@ -13,9 +13,17 @@ const Footer = () => (
             <h3>INSTITUCIONAL</h3>
 
             <nav>
-              <a>Sobre nós</a>
-              <a>Contato</a>
-              <a>Troca e devolução</a>
+              <Link href="/sobre" passHref>
+                <a>Sobre nós</a>
+              </Link>
+
+              <Link href="/contato" passHref>
+                <a>Contato</a>
+              </Link>
+
+              <Link href="/regulamentos" passHref>
+                <a>Troca e devolução</a>
+              </Link>
             </nav>
           </S.Block>
 
@@ -54,6 +62,7 @@ const Footer = () => (
                 width={140}
                 height={30}
               />
+              &nbsp; &nbsp; &nbsp;
               <Image src="/img/letsEncrypt.webp" width={55} height={50} />
             </S.Row>
           </S.Block>

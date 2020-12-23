@@ -29,15 +29,21 @@ const buttonModifier = {
         color: ${theme.colors.white};
       }
     `,
-    full: (theme: DefaultTheme) => css`
-      background-color: ${theme.colors.orange};
+    full: (
+      theme: DefaultTheme,
+      background: 'cyan' | 'orange' | 'gray' | 'darkGray' | 'mediumGray'
+    ) => css`
+      background-color: ${theme.colors[background]};
     `
   },
   textShadow: {
     shadow: (theme: DefaultTheme) => css`
       text-shadow: ${theme.font.textShadow};
     `
-  }
+  },
+  height: (height: number) => css`
+    height: ${height}px;
+  `
 }
 
 export const Wrapper = styled.button<Props>`
@@ -50,14 +56,15 @@ export const Wrapper = styled.button<Props>`
     fontSize = 'small',
     textShadow = false,
     fontWeight = 'normal',
-    fontFamily = 'ubuntuCondensed'
+    fontFamily = 'ubuntuCondensed',
+    background = 'orange'
   }) => css`
     transition: 200ms;
     border-width: 3px;
     cursor: pointer;
     border-style: solid;
     font-family: ${theme.font.family[fontFamily!]};
-    border-color: ${theme.colors.orange};
+    border-color: ${theme.colors[background]};
     color: ${theme.colors[color!]};
     border-radius: ${theme.border.radius[radius]};
     ${buttonModifier.sizes[size]}
@@ -65,7 +72,7 @@ export const Wrapper = styled.button<Props>`
     font-weight: ${theme.font[fontWeight]};
     ${outline
       ? buttonModifier.background.outline(theme)
-      : buttonModifier.background.full(theme)}
+      : buttonModifier.background.full(theme, background)}
     ${textShadow ? buttonModifier.textShadow.shadow(theme) : ''}
   `}
 `

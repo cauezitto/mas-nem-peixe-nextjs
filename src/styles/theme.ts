@@ -11,6 +11,7 @@ export default {
       rounded: '20px'
     }
   },
+  boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)',
   font: {
     family: {
       ubuntuCondensed:
@@ -43,7 +44,9 @@ export default {
     gray: '#AAAAAA',
     darkGray: '#4C4949',
     orange: '#FF5A00',
-    cyan: '#03989E'
+    cyan: '#03989E',
+    green: '#23B229',
+    mediumGray: '#8B8989'
   },
   spacings: {
     xxsmall: '0.8rem',

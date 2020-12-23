@@ -63,6 +63,11 @@ export const Block = styled.div<BlockProps>`
       font-weight: ${theme.font.normal};
       font-size: ${theme.font.sizes.xlarge};
 
+      a {
+        text-decoration: none;
+        color: unset;
+      }
+
       @media (max-width: ${theme.breakPoints.mobileL}) {
         margin-top: ${theme.spacings.xxsmall};
       }

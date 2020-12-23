@@ -3,8 +3,8 @@ import * as S from './styles'
 
 export type Props = {
   quant: number
-  handleAdd: VoidFunction
-  handleSub: VoidFunction
+  handleAdd: any
+  handleSub: any
   size?: 'small' | 'medium' | 'large' | 'block'
 }
 

@@ -109,6 +109,7 @@ export const MobileAside = styled.aside`
     .shipping-wrapper {
       width: 100%;
       table {
+        display: table;
         border: 1px ${theme.colors.gray} solid;
         border-collapse: collapse;
         width: 100%;

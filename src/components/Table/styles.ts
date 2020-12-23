@@ -57,6 +57,9 @@ export const TableWrapper = styled.table<TableProps>`
     border-collapse: collapse;
     margin-top: ${theme.spacings[top]};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    svg {
+      cursor: pointer;
+    }
   `}
 `
 export const TrWrapper = styled.tr<TrProps>`

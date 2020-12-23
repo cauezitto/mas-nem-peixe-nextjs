@@ -2,6 +2,7 @@ import * as S from './styles'
 export type Props = {
   text?: string
   outline?: boolean
+  background?: 'orange' | 'gray' | 'darkGray' | 'cyan' | 'mediumGray'
   color?: 'black' | 'white' | 'orange'
   radius?: 'small' | 'medium' | 'rounded'
   size?: 'small' | 'medium' | 'large' | 'block'
@@ -9,6 +10,7 @@ export type Props = {
   textShadow?: boolean
   fontWeight?: 'normal' | 'semiBold' | 'bold'
   fontFamily?: 'ubuntu' | 'ubuntuCondensed' | 'manjari'
+  height?: number
 }
 
 const Button = ({
@@ -20,7 +22,8 @@ const Button = ({
   fontSize = 'small',
   fontWeight = 'normal',
   textShadow = false,
-  fontFamily = 'ubuntuCondensed'
+  fontFamily = 'ubuntuCondensed',
+  background = 'orange'
 }: Props) => (
   <S.Wrapper
     color={color}
@@ -31,6 +34,7 @@ const Button = ({
     textShadow={textShadow}
     fontWeight={fontWeight}
     fontFamily={fontFamily}
+    background={background}
   >
     {text}
   </S.Wrapper>
