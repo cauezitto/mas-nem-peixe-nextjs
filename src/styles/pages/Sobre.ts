@@ -108,6 +108,51 @@ const Sobre = styled.div`
       grid-area: wave;
       align-items: flex-end;
     }
+
+    @media (max-width: ${theme.breakPoints.tablet}) {
+      .history {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          'historia historia historia'
+          'line1 line1 line1'
+          'instagram instagram instagram'
+          'polvo . line2'
+          'loja loja loja'
+          '. line3 .'
+          'wait wait wait'
+          'wave wave wave';
+      }
+
+      .instagram {
+        margin-top: 10px;
+
+        p {
+          width: 100%;
+        }
+      }
+
+      .line2 {
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      .polvo {
+        img {
+          width: 100%;
+        }
+      }
+
+      .line3 {
+        margin-top: 0;
+      }
+
+      .wave {
+        justify-content: flex-end;
+      }
+    }
   `}
 `
 
