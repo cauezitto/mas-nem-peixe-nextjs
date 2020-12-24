@@ -40,6 +40,10 @@ const Sobre = styled.div`
       grid-area: instagram;
       margin-top: -250px;
 
+      p {
+        width: 90%;
+      }
+
       svg {
         color: ${theme.colors.black};
       }
@@ -73,7 +77,7 @@ const Sobre = styled.div`
 
     .line3 {
       grid-area: line3;
-      margin-top: -200px;
+      margin-top: -150px;
 
       margin-left: 21%;
       width: 60%;
