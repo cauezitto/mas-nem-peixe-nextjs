@@ -10,16 +10,17 @@ const Sobre = styled.div`
 
     .history {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas:
         'historia historia historia'
         'line1 line1 line1'
         '. instagram instagram'
         '. instagram instagram'
-        'polvo . line2'
+        'polvo polvo line2'
         'loja loja line2'
         '. line3 .'
         '. wait wave';
+
       gap: 20px;
     }
 
@@ -37,6 +38,11 @@ const Sobre = styled.div`
 
     .instagram {
       grid-area: instagram;
+      margin-top: -250px;
+
+      svg {
+        color: ${theme.colors.black};
+      }
     }
 
     .line2 {
@@ -51,15 +57,26 @@ const Sobre = styled.div`
       grid-area: polvo;
       display: flex;
       align-items: center;
-      justify-content: center;
+
+      img {
+        width: 50%;
+      }
     }
 
     .loja {
       grid-area: loja;
+
+      svg {
+        color: ${theme.colors.black};
+      }
     }
 
     .line3 {
       grid-area: line3;
+      margin-top: -200px;
+
+      margin-left: 21%;
+      width: 60%;
 
       img {
         width: 52%;
@@ -72,6 +89,9 @@ const Sobre = styled.div`
       justify-content: center;
       align-items: center;
       grid-area: wait;
+      h2 {
+        text-align: center;
+      }
 
       svg {
         font-size: 50px;
@@ -82,7 +102,7 @@ const Sobre = styled.div`
     .wave {
       display: flex;
       grid-area: wave;
-      align-items: center;
+      align-items: flex-end;
     }
   `}
 `

@@ -34,7 +34,8 @@ export default {
       xlarge: '2.2rem',
       xxlarge: '2.4rem',
       xxxlarge: '2.8rem',
-      extra: '3rem'
+      extra: '3.2rem',
+      max: '4.2rem'
     }
   },
   colors: {

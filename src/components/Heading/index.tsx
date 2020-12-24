@@ -5,7 +5,7 @@ export type Props = {
   children: React.ReactNode | string
   font?: 'manjari' | 'ubuntu' | 'ubuntuCondensed'
   justify?: 'flex-start' | 'center' | 'flex-end'
-  fontSize?: 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge' | 'extra'
+  fontSize?: 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge' | 'extra' | 'max'
   fontWeight?: 'semiBold' | 'bold'
   margin?: string
 }

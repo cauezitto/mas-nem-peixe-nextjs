@@ -20,9 +20,10 @@ const sobre = () => {
           <div className="historia">
             <Heading
               justify="center"
-              fontSize="extra"
+              fontSize="max"
               color="cyan"
               margin="80px 0"
+              fontWeight="bold"
             >
               HISTÓRIA
             </Heading>
@@ -48,7 +49,9 @@ const sobre = () => {
           </div>
 
           <div className="instagram">
-            <Heading justify="center">INSTAGRAM</Heading>
+            <Heading justify="center" fontSize="max" color="cyan">
+              <FiInstagram /> &nbsp; INSTAGRAM
+            </Heading>
 
             <Paragraph
               color="black"
@@ -75,7 +78,7 @@ const sobre = () => {
           </div>
 
           <div className="polvo">
-            <Image src="/img/polvo.png" height={225} width={250} alt="polvo" />
+            <img src="/img/polvo.png" alt="polvo" />
           </div>
 
           <div className="line2">
@@ -84,7 +87,7 @@ const sobre = () => {
 
           <div className="loja">
             <Heading
-              fontSize="extra"
+              fontSize="max"
               justify="center"
               font="manjari"
               color="cyan"
@@ -117,7 +120,7 @@ const sobre = () => {
 
           <div className="wait">
             <GoLocation />
-            <Heading fontSize="extra" justify="center" color="cyan">
+            <Heading fontSize="max" justify="center" color="cyan">
               O que esperar?
             </Heading>
 
