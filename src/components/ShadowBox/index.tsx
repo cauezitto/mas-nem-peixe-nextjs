@@ -7,6 +7,7 @@ export type Props = {
   children?: React.ReactNode
   height?: number
   width?: number
+  className?: string
 }
 
 const ShadowBox = (props: Props) => (

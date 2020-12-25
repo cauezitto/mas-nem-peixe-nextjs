@@ -35,7 +35,10 @@ export default {
       xxlarge: '2.4rem',
       xxxlarge: '2.8rem',
       extra: '3.2rem',
-      max: '4.2rem'
+      max: '4.2rem',
+      xmax: '4.4rem',
+      xxmax: '4.8rem',
+      xxxmax: '5.2rem'
     }
   },
   colors: {

@@ -80,7 +80,7 @@ export default function Home() {
       <ShippingAndInstallments />
       <Wrapper>
         <S.SingleLinkContainer>
-          <Link href="#" passHref>
+          <Link href="/sobre" passHref>
             <a>
               <Button
                 text="SOBRE NÓS"
