@@ -36,7 +36,7 @@ const Favorites = () => {
   return (
     <Favoritos>
       <Header />
-      <DivisorHeader>Favoritos</DivisorHeader>
+      <DivisorHeader size="extra">Favoritos</DivisorHeader>
       <Wrapper>
         <ProductList>
           {products.map((product, index) => (
