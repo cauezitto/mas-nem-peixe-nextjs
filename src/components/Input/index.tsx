@@ -8,9 +8,11 @@ export type Props = {
   fontSize?: 'small' | 'large' | 'xlarge' | 'xxlarge'
   font?: 'ubuntu' | 'ubuntuCondensed' | 'manjari'
   outline?: boolean
+  borderColor?: 'gray' | 'black' | 'orange' | 'cyan'
   block?: boolean
   margin?: string
   textArea?: boolean
+  className?: string
 }
 
 const Input = (props: Props) => {

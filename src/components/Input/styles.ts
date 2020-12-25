@@ -26,10 +26,11 @@ export const Wrapper = styled.input<Props>`
     font = 'ubuntu',
     outline = true,
     block = false,
-    margin
+    margin,
+    borderColor = 'gray'
   }) => css`
     border-width: 2px;
-    border-color: ${theme.colors.gray};
+    border-color: ${theme.colors[borderColor]};
     border-style: solid;
     border-radius: ${radius}px;
     height: ${height}px;
@@ -55,11 +56,12 @@ export const TextArea = styled.textarea<Props>`
     font = 'ubuntu',
     outline = true,
     block = false,
-    margin
+    margin,
+    borderColor = 'gray'
   }) => css`
     text-indent: 10px;
     border-width: 2px;
-    border-color: ${theme.colors.gray};
+    border-color: ${theme.colors[borderColor]};
     border-style: solid;
     border-radius: ${radius}px;
     height: ${height}px;
