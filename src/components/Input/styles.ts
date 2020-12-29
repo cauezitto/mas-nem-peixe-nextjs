@@ -59,6 +59,7 @@ export const TextArea = styled.textarea<Props>`
     margin,
     borderColor = 'gray'
   }) => css`
+    outline: 0;
     text-indent: 10px;
     border-width: 2px;
     border-color: ${theme.colors[borderColor]};

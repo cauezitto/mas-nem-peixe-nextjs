@@ -2,11 +2,13 @@ import * as S from './styles'
 
 export type Props = {
   children: string | React.ReactNode
+  fontWeight?: 'normal' | 'semiBold' | 'bold'
   color?: 'black' | 'orange' | 'gray' | 'mediumGray' | 'darkGray' | 'cyan'
   fontSize?: 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge'
   font?: 'manjari' | 'ubuntu' | 'ubuntuCondensed'
   justify?: 'flex-start' | 'center' | 'flex-end'
   textAlign?: 'right' | 'center' | 'right'
+  margin?: string
 }
 
 const Paragraph = (props: Props) => (

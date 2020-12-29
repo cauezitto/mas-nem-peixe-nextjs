@@ -165,7 +165,7 @@ const Carrinho = () => {
                       />
                     </div>
                     <Image src="/img/caneca.webp" width="190" height="150" />
-                    <h3> {product.name} </h3>
+                    <h3>{`paçoca ${product.name} lLALALALALALALA`}</h3>
                     <span>
                       <b>Referência:</b> CANEMNP
                     </span>
@@ -210,7 +210,10 @@ const Carrinho = () => {
                           />
 
                           <div className="product-info">
-                            <h3>{product.name}</h3>
+                            <h3>
+                              {' '}
+                              {product.category} &nbsp; {product.name}
+                            </h3>
 
                             <span>
                               <b>Referência:</b> CANEMNP
@@ -327,7 +330,6 @@ const Carrinho = () => {
                     {cart.products.map((product, index) => (
                       <li key={index}>
                         {product.quant} &nbsp; {product.name.substring(0, 18)}
-                        {'...'}
                         &nbsp;
                         {PriceHandler.priceNumberToReadblePrice(product.price)}
                       </li>

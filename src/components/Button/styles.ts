@@ -21,11 +21,14 @@ const buttonModifier = {
     `
   },
   background: {
-    outline: (theme: DefaultTheme) => css`
+    outline: (
+      theme: DefaultTheme,
+      color: 'orange' | 'gray' | 'darkGray' | 'cyan' | 'mediumGray'
+    ) => css`
       background: none;
       :hover {
         transition: 200ms;
-        background-color: ${theme.colors.orange};
+        background-color: ${theme.colors[color]};
         color: ${theme.colors.white};
       }
     `,
@@ -71,7 +74,7 @@ export const Wrapper = styled.button<Props>`
     font-size: ${theme.font.sizes[fontSize]};
     font-weight: ${theme.font[fontWeight]};
     ${outline
-      ? buttonModifier.background.outline(theme)
+      ? buttonModifier.background.outline(theme, background)
       : buttonModifier.background.full(theme, background)}
     ${textShadow ? buttonModifier.textShadow.shadow(theme) : ''}
   `}

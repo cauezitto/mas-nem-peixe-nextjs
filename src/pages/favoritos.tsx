@@ -63,6 +63,7 @@ const Favorites = () => {
               value="https://masnempeixe.com.br/favoritos/s5AlbZhJ7TK8ThQtrlzHOV"
               borderColor="orange"
               width={570}
+              readOnly
             />
 
             <Input
@@ -71,6 +72,7 @@ const Favorites = () => {
               borderColor="orange"
               width={350}
               textArea
+              readOnly
             />
             <FiCopy className="copy desktop" onClick={copy} />
             <FiCopy className="copy mobile" onClick={copyMobile} />

@@ -357,7 +357,7 @@ const sobre = () => {
         </section>
 
         <section className="go2contact">
-          <Heading fontSize="max" justify="center">
+          <Heading fontSize="max" justify="center" margin="0 0 80px 0">
             FALE CONOSCO
           </Heading>
 

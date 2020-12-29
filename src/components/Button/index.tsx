@@ -3,7 +3,7 @@ export type Props = {
   text?: string
   outline?: boolean
   background?: 'orange' | 'gray' | 'darkGray' | 'cyan' | 'mediumGray'
-  color?: 'black' | 'white' | 'orange'
+  color?: 'black' | 'white' | 'orange' | 'cyan'
   radius?: 'small' | 'medium' | 'rounded'
   size?: 'small' | 'medium' | 'large' | 'block'
   fontSize?: 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge'

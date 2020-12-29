@@ -50,7 +50,9 @@ export default {
     orange: '#FF5A00',
     cyan: '#03989E',
     green: '#23B229',
-    mediumGray: '#8B8989'
+    mediumGray: '#8B8989',
+    orangeGradient:
+      'linear-gradient(360deg, rgba(215, 77, 1, 1) 0%, rgba(255, 90, 0, 1) 50%, rgba(215, 77, 1, 1) 100%);'
   },
   spacings: {
     xxsmall: '0.8rem',
@@ -60,6 +62,11 @@ export default {
     large: '4.0rem',
     xlarge: '4.8rem',
     xxlarge: '5.6rem',
+    xxxlarge: '6.4rem',
+    giant: '7.2rem',
+    xgiant: '8.0rem',
+    xxgiant: '8.8rem',
+    xxxgiant: '9.6rem',
     wrapper: '15rem'
   },
   layers: {

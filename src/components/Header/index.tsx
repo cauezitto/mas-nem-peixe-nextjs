@@ -67,7 +67,11 @@ const Header = () => (
             </li>
             <li>
               {' '}
-              <FiHeart /> FAVORITOS
+              <Link href="/favoritos" passHref>
+                <a>
+                  <FiHeart /> FAVORITOS
+                </a>
+              </Link>
             </li>
             <li>
               {' '}

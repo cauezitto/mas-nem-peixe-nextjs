@@ -13,7 +13,8 @@ const StatesProvider: React.FC = ({ children }) => {
   const [cart, setCart] = useState<CartProps>({
     products: [
       {
-        name: 'caneca "Mas Nem Peixe?"',
+        name: '"Mas Nem Peixe?"',
+        category: 'caneca',
         price: 34.5,
         quant: 5,
         images: [
@@ -25,9 +26,10 @@ const StatesProvider: React.FC = ({ children }) => {
         description: 'canecona legal'
       },
       {
-        name: 'caneca "Mas Nem Peixe?"',
+        name: '"Mas Nem Peixe?"',
         price: 34.5,
         quant: 5,
+        category: 'caneca',
         images: [
           {
             title: 'canemnp',

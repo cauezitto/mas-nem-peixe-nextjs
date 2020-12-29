@@ -219,7 +219,7 @@ const Sobre = styled.div`
     }
 
     .go2contact {
-      margin: 160px 0;
+      margin: 150px 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -243,7 +243,7 @@ const Sobre = styled.div`
         height: 55px;
         text-align: center;
         border-radius: 50px;
-        margin-top: 20px;
+        margin-top: 80px;
       }
     }
 

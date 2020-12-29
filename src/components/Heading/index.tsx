@@ -15,7 +15,7 @@ export type Props = {
     | 'xmax'
     | 'xxmax'
     | 'xxxmax'
-  fontWeight?: 'semiBold' | 'bold'
+  fontWeight?: 'light' | 'normal' | 'semiBold' | 'bold'
   margin?: string
 }
 
