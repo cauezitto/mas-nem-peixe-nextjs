@@ -138,6 +138,57 @@ export const Wrapper = styled.header`
       cursor: pointer;
     }
 
+    .hidden {
+      margin-left: -100%;
+      transition: all 0.8s ease;
+      margin-left: -100%;
+    }
+
+    .visible {
+      display: unset;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        margin-left: -100%;
+      }
+
+      to {
+        margin-left: 0;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        margin-left: 0;
+      }
+
+      to {
+        margin-left: -100%;
+        display: none;
+      }
+    }
+
+    .menu-mobile {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      background-color: ${theme.colors.white};
+      z-index: 5;
+      top: 0;
+    }
+
+    .noRotated {
+      transition: 250ms;
+      transform: rotate(0deg);
+    }
+
+    .rotated {
+      transition: 300ms;
+      transform: rotate(-90deg);
+    }
+
     @media (max-width: ${theme.breakPoints.laptopS}) {
       .linksContainer ul li {
         margin-left: ${theme.spacings.medium};

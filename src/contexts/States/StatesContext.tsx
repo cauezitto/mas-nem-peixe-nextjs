@@ -14,7 +14,7 @@ const StatesProvider: React.FC = ({ children }) => {
     products: [
       {
         name: '"Mas Nem Peixe?"',
-        category: 'caneca',
+        category: 'Caneca',
         price: 34.5,
         quant: 5,
         images: [
@@ -29,7 +29,7 @@ const StatesProvider: React.FC = ({ children }) => {
         name: '"Mas Nem Peixe?"',
         price: 34.5,
         quant: 5,
-        category: 'caneca',
+        category: 'Caneca',
         images: [
           {
             title: 'canemnp',

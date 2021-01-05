@@ -165,7 +165,7 @@ const Carrinho = () => {
                       />
                     </div>
                     <Image src="/img/caneca.webp" width="190" height="150" />
-                    <h3>{`paçoca ${product.name} lLALALALALALALA`}</h3>
+                    <h3>{`${product.category} ${product.name}`}</h3>
                     <span>
                       <b>Referência:</b> CANEMNP
                     </span>
