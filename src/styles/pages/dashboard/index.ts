@@ -64,6 +64,12 @@ const Container = styled.div<Props>`
         padding: ${theme.spacings.large} 5%;
       }
     }
+
+    @media (max-width: ${theme.breakPoints.mobileS}) {
+      .content {
+        padding: ${theme.spacings.large} ${theme.spacings.xxsmall};
+      }
+    }
   `}
 `
 

@@ -120,6 +120,18 @@ const Container = styled.div`
         }
       }
     }
+
+    @media (max-width: ${theme.breakPoints.mobileM}) {
+      .table-mobile {
+        .grid {
+          padding: ${theme.spacings.xsmall};
+
+          .item p {
+            font-size: ${theme.font.sizes.small};
+          }
+        }
+      }
+    }
   `}
 `
 

@@ -253,7 +253,7 @@ const ProductSection = () => {
               <span>OU</span>
 
               <Button
-                text="ADCIONAR AO CARRINHO"
+                text="ADICIONAR AO CARRINHO"
                 size="block"
                 color="black"
                 fontSize="large"
