@@ -34,7 +34,7 @@ const Cadastro = () => {
                 textAlign="center"
                 font="ubuntu"
                 fontSize="large"
-                margin="70px 0 30px 0"
+                margin="20px 0 30px 0"
               >
                 Para se manter conectado conosco, <br /> por favor faça seu
                 login
@@ -64,7 +64,7 @@ const Cadastro = () => {
           <div className="go2login-mobile">
             Você por aqui! :) &nbsp;
             <StyledLink
-              href="/cadastro"
+              href="/login"
               color="orange"
               fontSize="xlarge"
               fontWeight="semiBold"

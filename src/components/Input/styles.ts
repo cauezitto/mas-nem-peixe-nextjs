@@ -1,12 +1,15 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 import { Props } from '.'
 
 const outlineModfier = {
   none: css`
     outline: none;
   `,
-  background: css`
-    background-color: #fff;
+  background: (
+    theme: DefaultTheme,
+    background: 'white' | 'gray' | 'lightGray'
+  ) => css`
+    background-color: ${theme.colors[background]};
   `
 }
 
@@ -27,7 +30,9 @@ export const Wrapper = styled.input<Props>`
     outline = true,
     block = false,
     margin,
-    borderColor = 'gray'
+    borderColor = 'gray',
+    background = 'white',
+    boxShadow = false
   }) => css`
     border-width: 2px;
     border-color: ${theme.colors[borderColor]};
@@ -37,11 +42,18 @@ export const Wrapper = styled.input<Props>`
     width: ${width}px;
     font-size: ${theme.font.sizes[fontSize]};
     font-family: ${theme.font.family[font]};
-    ${outline ? outlineModfier.none : outlineModfier.background}
+    ${outline
+      ? outlineModfier.none
+      : outlineModfier.background(theme, background)}
     ${block && widthModifier.full}
     ${margin &&
     css`
       margin: ${margin};
+    `}
+
+    ${boxShadow &&
+    css`
+      box-shadow: ${theme.boxShadow};
     `}
   `}
 `
@@ -57,7 +69,9 @@ export const TextArea = styled.textarea<Props>`
     outline = true,
     block = false,
     margin,
-    borderColor = 'gray'
+    borderColor = 'gray',
+    background = 'white',
+    boxShadow = false
   }) => css`
     outline: 0;
     text-indent: 10px;
@@ -69,11 +83,17 @@ export const TextArea = styled.textarea<Props>`
     width: ${width}px;
     font-size: ${theme.font.sizes[fontSize]};
     font-family: ${theme.font.family[font]};
-    ${outline ? outlineModfier.none : outlineModfier.background}
+    ${outline
+      ? outlineModfier.none
+      : outlineModfier.background(theme, background)}
     ${block && widthModifier.full}
     ${margin &&
     css`
       margin: ${margin};
+    `}
+    ${boxShadow &&
+    css`
+      box-shadow: ${theme.boxShadow};
     `}
   `}
 `

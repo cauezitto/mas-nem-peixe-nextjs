@@ -5,15 +5,17 @@ export type Props = {
   radius?: number
   height?: number
   width?: number
+  background?: 'white' | 'gray' | 'lightGray'
   fontSize?: 'small' | 'large' | 'xlarge' | 'xxlarge'
   font?: 'ubuntu' | 'ubuntuCondensed' | 'manjari'
   outline?: boolean
-  borderColor?: 'gray' | 'black' | 'orange' | 'cyan' | 'white'
+  borderColor?: 'gray' | 'black' | 'orange' | 'cyan' | 'white' | 'lightGray'
   block?: boolean
   margin?: string
   textArea?: boolean
   className?: string
   readOnly?: boolean
+  boxShadow?: boolean
 }
 
 const Input = (props: Props) => {

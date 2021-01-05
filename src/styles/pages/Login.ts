@@ -117,6 +117,7 @@ const Container = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: ${theme.colors.white};
 
       .form-wrapper{
         border-radius: 0 50px 50px 0;
@@ -124,6 +125,8 @@ const Container = styled.div`
 
       .subscribe-wrapper{
         border-radius: 50px 0 0 50px;
+        background-color: ${theme.colors.silver};
+        padding: ${theme.spacings.xgiant};
       }
     }
 

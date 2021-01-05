@@ -15,7 +15,7 @@ const Login = () => {
             <Image src="/img/logo.webp" height={40} width={140} />
           </div>
           <div className="people">
-            <Image src="/img/people.svg" height={460} width={340} />
+            <Image src="/img/people.svg" height={540} width={400} />
           </div>
           <div className="subscribe">
             <Heading

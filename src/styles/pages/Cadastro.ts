@@ -2,24 +2,19 @@ import styled, { css } from 'styled-components'
 
 const Container = styled.div`
   ${({ theme }) => css`
-    display: flex;
-    width: 100%;
-    max-width: 1445px;
-    height: 100vh;
-    max-height: 850px;
-    margin: auto;
-    align-self: center;
-    justify-self: center;
-    justify-content: space-between;
   input, button{
     outline: 0;
   }
     .sub-container {
       display: flex;
-      flex: 1;
-      height: 100%;
+      width: 100%;
       max-width: 1445px;
+      height: 100vh;
       max-height: 850px;
+      margin: auto;
+      align-self: center;
+      justify-self: center;
+      justify-content: space-between;
     }
 
     .go2login {
@@ -61,8 +56,7 @@ const Container = styled.div`
         rgba(40, 210, 215, 1) 50%,
         rgba(3, 152, 158, 1) 100%
       );
-      padding: ${theme.spacings.medium} ${theme.spacings.xxxgiant}
-        ${theme.spacings.medium} ${theme.spacings.xxxgiant};
+      padding: ${theme.spacings.xxgiant} ${theme.spacings.xxxgiant};
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
@@ -70,15 +64,14 @@ const Container = styled.div`
       align-items: flex-start;
       grid-template-areas:
         'title title'
-        'icons icons'
-        'text text'
+        /* 'icons icons'
+        'text text' */
         '. .'
         '. .'
         'name name'
         'email phone'
         'address address'
         'password password'
-        '. .'
         '. .'
         'send send';
 
@@ -93,7 +86,7 @@ const Container = styled.div`
         grid-area: icons;
 
         .icon-wrapper {
-          display: flex;
+          display: none;
           justify-content: center;
           align-items: center;
           color: ${theme.colors.white};
@@ -112,6 +105,7 @@ const Container = styled.div`
       }
 
       .text {
+        display: none;
         grid-area: text;
       }
 
@@ -147,7 +141,7 @@ const Container = styled.div`
         grid-area: send;
 
         button{
-          width: 300px;
+          width: 60%;
           border-radius: 50px:
         }
       }
@@ -168,8 +162,20 @@ const Container = styled.div`
 
     @media (min-width: 1445px){
 
+      flex: 1;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: ${theme.colors.white};
+
       .register-wrapper{
         border-radius: 0 50px 50px 0;
+      }
+
+      .go2login{
+        background-color: ${theme.colors.silver};
+        border-radius: 50px 0 0 50px;
       }
     }
 

@@ -51,6 +51,7 @@ export default {
     cyan: '#03989E',
     green: '#23B229',
     mediumGray: '#8B8989',
+    lightGray: '#DCDCDC',
     orangeGradient:
       'linear-gradient(360deg, rgba(215, 77, 1, 1) 0%, rgba(255, 90, 0, 1) 50%, rgba(215, 77, 1, 1) 100%);'
   },
